@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="./images/movie logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Monkey Man</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="http://127.0.0.1:5500/FarsDub%20Final%20Form/Main/FarsDub.html#" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>Fars<span class="main-color">D</span>ub
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="http://127.0.0.1:5500/FarsDub%20Final%20Form/Main/FarsDub.html#">Home</a></li>
+                    <li><a href="#">Scary</a></li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Family</a></li>
+                    <li><a href="#">History</a></li>
+                    <li>
+                        <a href="#" class="btn btn-hover">
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV -->
+    <!-- Centered Container -->
+    <div class="center-container">
+        <div class="movie-details">
+            
+            <img src="Monkey Man.jpg" alt="History Of Evil" class="movie-poster">
+            <div class="movie-stats">
+                <h2>Monkey Man</h2>
+                <p><strong>Genre:</strong> Action, Thriller</p>
+                <p><strong>Cast:</strong> Dev Patel, Sharlto Copley, Pitobash, Adithi Kalkunte </p>
+                <p><strong>Director:</strong> Dev Patel</p>
+                <p><strong>Country:</strong> United States</p>
+                <p><strong>Release Year:</strong> 2024</p>
+                <p><strong>Runtime:</strong> 1h 01m</p>
+            </div>
+        </div>
+        <iframe width="1400" height="900"src="//ok.ru/videoembed/7547141229086" frameborder="0" allow="autoplay" allowfullscreen class="video"></iframe>
+    </div>
+
+    <script>
+        function playVideo() {
+            var video = document.getElementById("videoPlayer");
+            video.play();
+        }
+
+        function pauseVideo() {
+            var video = document.getElementById("videoPlayer");
+            video.pause();
+        }
+    </script>
+    </div>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburgerMenu.addEventListener('click', function () {
+            navMenu.classList.toggle('active');
+            hamburgerMenu.classList.toggle('active');
+        });
+    </script>
+    
+    <script>
+        function playVideo() {
+            var video = document.getElementById("videoPlayer");
+            video.play();
+        }
+
+        function pauseVideo() {
+            var video = document.getElementById("videoPlayer");
+            video.pause();
+        }
+    </script>
+
+    <style>
+        :root {
+            --main-color: #1f83ed;
+            --body-bg: #181616;
+            --nav-height: 60px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: "Cairo", sans-serif;
+            background-color: var(--body-bg);
+            color: #ffffff;
+            padding-top: var(--nav-height);
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .main-color {
+            color: var(--main-color);
+        }
+
+        .container {
+            max-width: 1920px;
+            padding: 0 40px;
+            margin: auto;
+        }
+
+        .nav-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 99;
+            background-color: #000000;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--text-color);
+            height: var(--nav-height);
+        }
+
+        .nav a {
+            color: var(--text-color);
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        .nav-menu {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-menu li ~ li {
+            margin-left: 30px;
+        }
+
+        .nav-menu a {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .nav-menu a:hover {
+            color: var(--main-color);
+        }
+
+        .nav-menu a.btn:hover,
+        a.logo:hover,
+        a.movie-item:hover {
+            color: unset;
+        }
+
+        .btn {
+            color: #ffffff;
+            padding: 0.25rem 1.5rem;
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: inline-flex;
+            position: relative;
+            align-items: center;
+        }
+
+        .btn-hover::before {
+            z-index: 1;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background-color: var(--main-color);
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn-hover:hover::before {
+            width: 100%;
+        }
+
+        .btn i,
+        .btn span {
+            z-index: 1;
+        }
+
+        .hamburger-menu {
+            --size: 30px;
+            height: var(--size);
+            width: var(--size);
+            cursor: pointer;
+            z-index: 101;
+            position: relative;
+            display: none;
+            align-items: center;
+        }
+
+        .hamburger {
+            position: relative;
+        }
+
+        .hamburger,
+        .hamburger::before,
+        .hamburger::after {
+            width: var(--size);
+            height: 3px;
+            border-radius: 0.5rem;
+            background-color: var(--text-color);
+            transition: 0.4s;
+        }
+
+        .hamburger::before,
+        .hamburger::after {
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+
+        .hamburger::before {
+            top: -10px;
+        }
+
+        .hamburger::after {
+            bottom: -10px;
+        }
+
+        .hamburger-menu.active .hamburger {
+            background-color: transparent;
+        }
+        
+        @media only screen and (max-width: 850px) {
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                left: -100%;
+                background-color: #000000;
+                flex-direction: column;
+                width: 80%;
+                height: 100vh;
+                padding: 20px;
+                transition: 0.3s ease-in-out;
+            }
+
+            .nav-menu li {
+                margin: 10px 30px;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+        }
+
+        /* New styles for centered container */
+        .center-container {
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            max-width: 1200%;
+            margin: auto;
+        }
+
+        .center-container h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .center-container p {
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .center-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .movie-details {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .movie-details img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .movie-stats {
+            text-align: left;
+        }
+
+        .movie-stats p {
+            margin: 5px 0;
+        }
+    </style>
+</body>
+
+</html>
